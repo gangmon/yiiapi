@@ -1,0 +1,86 @@
+2017-09-05 14:17:41 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Connection.php:646
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Connection.php(646): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Connection.php(579): yii\db\Connection->createPdoInstance()
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare(true)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/mysql/Schema.php(199): yii\db\Command->queryAll()
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/mysql/Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Schema.php(152): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/controllers/MigrateController.php(194): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(814): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(155): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#17 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#18 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 /Users/michaelweixi/WWWRoot/apitpl/yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Connection.php:584
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Connection.php(928): yii\db\Connection->open()
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Connection.php(915): yii\db\Connection->getMasterPdo()
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Command.php(910): yii\db\Command->prepare(true)
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/mysql/Schema.php(199): yii\db\Command->queryAll()
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/mysql/Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Schema.php(152): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/controllers/MigrateController.php(194): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(814): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(155): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('', Array)
+#16 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 /Users/michaelweixi/WWWRoot/apitpl/yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-09-05 14:17:41 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'TMPDIR' => '/var/folders/tg/_305tqss4z70k46xwbgp_q080000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.O93LIOXnJd/Render'
+    'TERM_PROGRAM_VERSION' => '388.1.1'
+    'TERM_SESSION_ID' => '6745B9C6-B204-4BB3-A657-23B40319BE8A'
+    'USER' => 'michaelweixi'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.8XYu6Jlpj5/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/michaelweixi/WWWRoot/apitpl'
+    'LANG' => 'zh_CN.UTF-8'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/michaelweixi'
+    'LOGNAME' => 'michaelweixi'
+    'SECURITYSESSIONID' => '186a7'
+    '_' => './yii'
+    'OLDPWD' => '/Users/michaelweixi/WWWRoot'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1504592261.8688
+    'REQUEST_TIME' => 1504592261
+    'argv' => [
+        0 => './yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

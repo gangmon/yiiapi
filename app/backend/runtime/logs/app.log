@@ -1,0 +1,2919 @@
+2017-09-05 15:53:31 [127.0.0.1][-][evjvnaoa2vsmkj2aeoqq74hei6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/about' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('about', Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/about', Array)
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-05 15:53:31 [127.0.0.1][-][evjvnaoa2vsmkj2aeoqq74hei6][info][application] $_GET = [
+    'r' => 'site/about'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'evjvnaoa2vsmkj2aeoqq74hei6'
+    '_csrf-backend' => '929cd120ac5ba8513c5d062dfdf535521bf7762fd51043cb8d788c3e1de6e070a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"›1)·#­·ä0|´45èL¯;ÉùYó‰H1êJ…\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=evjvnaoa2vsmkj2aeoqq74hei6; _csrf-backend=929cd120ac5ba8513c5d062dfdf535521bf7762fd51043cb8d788c3e1de6e070a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%9B%0B1%29%B7%23%AD%B7%E40%7C%14%90%B445%E8L%AF%0C%3B%C9%F9Y%F3%89H1%EAJ%85%13%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '51315'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fabout'
+    'REQUEST_URI' => '/index.php?r=site%2Fabout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504598011.089
+    'REQUEST_TIME' => 1504598011
+]
+2017-09-06 00:10:26 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'access_token'' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Command.php:842
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Command.php(842): PDOStatement->execute()
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Schema.php(454): yii\db\Command->execute()
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/BaseActiveRecord.php(643): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AdminuserController->actionCreate()
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'access_token'
+The SQL being executed was: INSERT INTO `adminuser` (`username`, `realname`, `email`, `status`, `password_hash`, `auth_key`, `password_reset_token`, `access_token`, `expire_at`, `logged_at`, `created_at`, `updated_at`) VALUES ('heyx', 'ä½•æ³³ç­±', 'heyx@weixistyle.com', 10, '$2y$13$4Y5KRDHPFYF.rYumLe6rx.34gBLpK6HROMklh9A8.TZwRFNrM5RyW', 'IXlEbcenpi34TzmMpG7TRTFyTYS2zDsM', '', '', NULL, 1504152206, 1504152206, 1504152206)' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `ad...')
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/Schema.php(454): yii\db\Command->execute()
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\Schema->insert('<span class="st...', '[<span class="s...')
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/BaseActiveRecord.php(643): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#5 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(68): yii\db\BaseActiveRecord->save()
+#6 [internal function]: backend\controllers\AdminuserController->actionCreate()
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '' for key 'access_token'
+)
+
+2017-09-06 00:10:26 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'LYXE4z8HAxUDX7AD4rp24Ev9mXEapa38QToEXWjGEY82fojXG98Wrtqlsf_2oZHjqLWRBFeqEZqhuXrEKPWF6A=='
+    'Adminuser' => [
+        'username' => 'heyx'
+        'realname' => 'ä½•æ³³ç­±'
+        'email' => 'heyx@weixistyle.com'
+        'status' => '10'
+        'password_hash' => '$2y$13$4Y5KRDHPFYF.rYumLe6rx.34gBLpK6HROMklh9A8.TZwRFNrM5RyW'
+        'auth_key' => 'IXlEbcenpi34TzmMpG7TRTFyTYS2zDsM'
+        'password_reset_token' => ''
+        'access_token' => ''
+        'expire_at' => ''
+        'logged_at' => '1504152206'
+        'created_at' => '1504152206'
+        'updated_at' => '1504152206'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'dk96k36t3jm9o5dnm0qt3ro9v2'
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '610'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://admin.apitpl.dev'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=dk96k36t3jm9o5dnm0qt3ro9v2; _csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '58897'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504627826.573
+    'REQUEST_TIME' => 1504627826
+]
+2017-09-06 01:08:28 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/index".' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/index', Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'é¡µé¢æœªæ‰¾åˆ°ã€‚' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-06 01:08:28 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'dk96k36t3jm9o5dnm0qt3ro9v2'
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=dk96k36t3jm9o5dnm0qt3ro9v2; _csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '60923'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504631308.476
+    'REQUEST_TIME' => 1504631308
+]
+2017-09-06 09:04:01 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "logout".' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('logout', Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'é¡µé¢æœªæ‰¾åˆ°ã€‚' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-09-06 09:04:01 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][info][application] $_GET = [
+    'r' => 'logout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'dk96k36t3jm9o5dnm0qt3ro9v2'
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=dk96k36t3jm9o5dnm0qt3ro9v2; _csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '51000'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=logout'
+    'REQUEST_URI' => '/index.php?r=logout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504659841.021
+    'REQUEST_TIME' => 1504659841
+]
+2017-09-06 09:04:07 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-09-06 09:04:07 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'dk96k36t3jm9o5dnm0qt3ro9v2'
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=dk96k36t3jm9o5dnm0qt3ro9v2; _csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '51003'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/logout'
+    'REQUEST_URI' => '/index.php?r=site/logout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504659847.828
+    'REQUEST_TIME' => 1504659847
+]
+2017-09-06 09:04:23 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-09-06 09:04:23 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'dk96k36t3jm9o5dnm0qt3ro9v2'
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=dk96k36t3jm9o5dnm0qt3ro9v2; _csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '51008'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/logout'
+    'REQUEST_URI' => '/index.php?r=site/logout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504659863.057
+    'REQUEST_TIME' => 1504659863
+]
+2017-09-06 09:08:21 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-09-06 09:08:21 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'dk96k36t3jm9o5dnm0qt3ro9v2'
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=dk96k36t3jm9o5dnm0qt3ro9v2; _csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '51058'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504660101.061
+    'REQUEST_TIME' => 1504660101
+]
+2017-09-06 09:09:27 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-09-06 09:09:27 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'dk96k36t3jm9o5dnm0qt3ro9v2'
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=dk96k36t3jm9o5dnm0qt3ro9v2; _csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '51076'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504660167.364
+    'REQUEST_TIME' => 1504660167
+]
+2017-09-06 09:09:53 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-09-06 09:09:53 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'dk96k36t3jm9o5dnm0qt3ro9v2'
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=dk96k36t3jm9o5dnm0qt3ro9v2; _csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '51087'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504660193.935
+    'REQUEST_TIME' => 1504660193
+]
+2017-09-06 09:09:55 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-09-06 09:09:55 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'dk96k36t3jm9o5dnm0qt3ro9v2'
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=dk96k36t3jm9o5dnm0qt3ro9v2; _csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '51087'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504660195.222
+    'REQUEST_TIME' => 1504660195
+]
+2017-09-06 09:21:31 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'Method Not Allowed. This url can only handle the following request methods: POST.' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/filters/VerbFilter.php:105
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('logout', Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/logout', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-09-06 09:21:31 [127.0.0.1][1][dk96k36t3jm9o5dnm0qt3ro9v2][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'dk96k36t3jm9o5dnm0qt3ro9v2'
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=site%2Flogout'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => 'advanced-backend=dk96k36t3jm9o5dnm0qt3ro9v2; _csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '51230'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504660891.842
+    'REQUEST_TIME' => 1504660891
+]
+2017-09-06 15:46:53 [127.0.0.1][1][dcfj4v19plb7clr5v87suelc56][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Undefined class constant 'STATUS_ACTIVE'' in /Users/michaelweixi/WWWRoot/apitpl/common/models/Article.php:37
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-06 15:46:53 [127.0.0.1][1][dcfj4v19plb7clr5v87suelc56][info][application] $_GET = [
+    'r' => 'article/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'dcfj4v19plb7clr5v87suelc56'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=dcfj4v19plb7clr5v87suelc56; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '58055'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Findex'
+    'REQUEST_URI' => '/index.php?r=article%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504684013.476
+    'REQUEST_TIME' => 1504684013
+]
+2017-09-06 16:42:08 [127.0.0.1][1][dcfj4v19plb7clr5v87suelc56][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Use of undefined constant statusStr - assumed 'statusStr'' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/view.php:39
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/view.php(39): yii\base\ErrorHandler->handleError(8, 'Use of undefine...', '/Users/michaelw...', 39, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\ArticleController))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\ArticleController))
+#5 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/ArticleController.php(56): yii\base\Controller->render('view', Array)
+#6 [internal function]: backend\controllers\ArticleController->actionView('1')
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('article/view', Array)
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2017-09-06 16:42:08 [127.0.0.1][1][dcfj4v19plb7clr5v87suelc56][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'dcfj4v19plb7clr5v87suelc56'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=article%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=dcfj4v19plb7clr5v87suelc56; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '58859'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Fview&id=1'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504687328.266
+    'REQUEST_TIME' => 1504687328
+]
+2017-09-06 16:42:47 [127.0.0.1][1][dcfj4v19plb7clr5v87suelc56][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: cateStr' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/view.php:35
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/view.php(35): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/michaelw...', 35, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\ArticleController))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\ArticleController))
+#5 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/ArticleController.php(56): yii\base\Controller->render('view', Array)
+#6 [internal function]: backend\controllers\ArticleController->actionView('1')
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('article/view', Array)
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2017-09-06 16:42:47 [127.0.0.1][1][dcfj4v19plb7clr5v87suelc56][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'dcfj4v19plb7clr5v87suelc56'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=article%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=dcfj4v19plb7clr5v87suelc56; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '58873'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Fview&id=1'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504687367.906
+    'REQUEST_TIME' => 1504687367
+]
+2017-09-06 16:46:40 [127.0.0.1][1][dcfj4v19plb7clr5v87suelc56][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\Article::createBy' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/BaseActiveRecord.php(285): yii\base\Component->__get('createBy')
+#1 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/view.php(45): yii\db\BaseActiveRecord->__get('createBy')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\ArticleController))
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('view', Array, Object(backend\controllers\ArticleController))
+#6 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/ArticleController.php(56): yii\base\Controller->render('view', Array)
+#7 [internal function]: backend\controllers\ArticleController->actionView('1')
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('view', Array)
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('article/view', Array)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+2017-09-06 16:46:40 [127.0.0.1][1][dcfj4v19plb7clr5v87suelc56][info][application] $_GET = [
+    'r' => 'article/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'dcfj4v19plb7clr5v87suelc56'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=article%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=dcfj4v19plb7clr5v87suelc56; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '58942'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Fview&id=1'
+    'REQUEST_URI' => '/index.php?r=article%2Fview&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504687600.322
+    'REQUEST_TIME' => 1504687600
+]
+2017-09-06 18:12:35 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\SignupForm::status' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/helpers/BaseHtml.php(2108): yii\base\Component->__get('status')
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/helpers/BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\SignupForm), 'status')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/helpers/BaseHtml.php(1336): yii\helpers\BaseHtml::activeInput('text', Object(backend\models\SignupForm), 'status', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/widgets/ActiveField.php(395): yii\helpers\BaseHtml::activeTextInput(Object(backend\models\SignupForm), 'status', Array)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/_form.php(21): yii\widgets\ActiveField->textInput()
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#8 /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/create.php(19): yii\base\View->render('_form', Array)
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\AdminuserController))
+#13 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(92): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\AdminuserController->actionCreate()
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#18 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/creat...', Array)
+#19 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#21 {main}
+2017-09-06 18:12:35 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '60680'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504692755.652
+    'REQUEST_TIME' => 1504692755
+]
+2017-09-06 18:12:53 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\SignupForm::status' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/helpers/BaseHtml.php(2108): yii\base\Component->__get('status')
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/helpers/BaseHtml.php(1287): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\SignupForm), 'status')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/helpers/BaseHtml.php(1336): yii\helpers\BaseHtml::activeInput('text', Object(backend\models\SignupForm), 'status', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/widgets/ActiveField.php(395): yii\helpers\BaseHtml::activeTextInput(Object(backend\models\SignupForm), 'status', Array)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/_form.php(21): yii\widgets\ActiveField->textInput()
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#8 /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/create.php(19): yii\base\View->render('_form', Array)
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\AdminuserController))
+#13 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(92): yii\base\Controller->render('create', Array)
+#14 [internal function]: backend\controllers\AdminuserController->actionCreate()
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#16 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#17 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#18 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/creat...', Array)
+#19 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#21 {main}
+2017-09-06 18:12:53 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '60682'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504692773.867
+    'REQUEST_TIME' => 1504692773
+]
+2017-09-06 19:43:20 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\SignupForm::isNewRecord' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/_form.php(57): yii\base\Component->__get('isNewRecord')
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/create.php(19): yii\base\View->render('_form', Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\AdminuserController))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(92): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\AdminuserController->actionCreate()
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/creat...', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-09-06 19:43:20 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '49468'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504698200.785
+    'REQUEST_TIME' => 1504698200
+]
+2017-09-07 03:41:29 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/resetpwd.php' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('resetpwd', Array, Object(backend\controllers\AdminuserController))
+#2 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(112): yii\base\Controller->render('resetpwd', Array)
+#3 [internal function]: backend\controllers\AdminuserController->actionResetpwd('1')
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('resetpwd', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/reset...', Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-09-07 03:41:29 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/resetpwd'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '51981'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fresetpwd&id=1'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fresetpwd&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504726889.46
+    'REQUEST_TIME' => 1504726889
+]
+2017-09-07 03:47:10 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\ResetpwdForm::realname' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/resetpwd.php(11): yii\base\Component->__get('realname')
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('resetpwd', Array, Object(backend\controllers\AdminuserController))
+#5 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(112): yii\base\Controller->render('resetpwd', Array)
+#6 [internal function]: backend\controllers\AdminuserController->actionResetpwd('1')
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('resetpwd', Array)
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/reset...', Array)
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2017-09-07 03:47:10 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/resetpwd'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52028'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fresetpwd&id=1'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fresetpwd&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727230.788
+    'REQUEST_TIME' => 1504727230
+]
+2017-09-07 03:49:17 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\ResetpwdForm::realname' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/resetpwd.php(11): yii\base\Component->__get('realname')
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('resetpwd', Array, Object(backend\controllers\AdminuserController))
+#5 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(112): yii\base\Controller->render('resetpwd', Array)
+#6 [internal function]: backend\controllers\AdminuserController->actionResetpwd('1')
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('resetpwd', Array)
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/reset...', Array)
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2017-09-07 03:49:17 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/resetpwd'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52053'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fresetpwd&id=1'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fresetpwd&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727357.322
+    'REQUEST_TIME' => 1504727357
+]
+2017-09-07 03:52:17 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: userRealName' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/resetpwd.php:11
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/adminuser/resetpwd.php(11): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/michaelw...', 11, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('resetpwd', Array, Object(backend\controllers\AdminuserController))
+#5 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(112): yii\base\Controller->render('resetpwd', Array)
+#6 [internal function]: backend\controllers\AdminuserController->actionResetpwd('4')
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('resetpwd', Array)
+#10 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/reset...', Array)
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#13 {main}
+2017-09-07 03:52:17 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/resetpwd'
+    'id' => '4'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52073'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fresetpwd&id=4'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fresetpwd&id=4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727537.127
+    'REQUEST_TIME' => 1504727537
+]
+2017-09-07 03:52:43 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'parse error, expecting `']''' in /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php:112
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-07 03:52:42 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52078'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Findex'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727562.962
+    'REQUEST_TIME' => 1504727562
+]
+2017-09-07 03:52:45 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'parse error, expecting `']''' in /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php:112
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-07 03:52:45 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52079'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fview&id=1'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fview&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727565.307
+    'REQUEST_TIME' => 1504727565
+]
+2017-09-07 03:52:49 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'parse error, expecting `']''' in /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php:112
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-07 03:52:49 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Fresetpwd&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52082'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Findex'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727569.043
+    'REQUEST_TIME' => 1504727569
+]
+2017-09-07 03:52:49 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'parse error, expecting `']''' in /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php:112
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-07 03:52:49 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/resetpwd'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52083'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fresetpwd&id=1'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fresetpwd&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727569.624
+    'REQUEST_TIME' => 1504727569
+]
+2017-09-07 03:52:49 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'parse error, expecting `']''' in /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php:112
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-07 03:52:49 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52084'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Findex'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727569.866
+    'REQUEST_TIME' => 1504727569
+]
+2017-09-07 03:52:50 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'parse error, expecting `']''' in /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php:112
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-07 03:52:50 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52085'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fview&id=1'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fview&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727570.461
+    'REQUEST_TIME' => 1504727570
+]
+2017-09-07 03:52:51 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'parse error, expecting `']''' in /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php:112
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-07 03:52:51 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/update'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Fview&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52086'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fupdate&id=1'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727571.432
+    'REQUEST_TIME' => 1504727571
+]
+2017-09-07 03:52:52 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'parse error, expecting `']''' in /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php:112
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-07 03:52:52 [127.0.0.1][1][v4h24tqeqjp36qdn9bngt9djm5][info][application] $_GET = [
+    'r' => 'adminuser/view'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'v4h24tqeqjp36qdn9bngt9djm5'
+    '_identity-backend' => '6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=v4h24tqeqjp36qdn9bngt9djm5; _identity-backend=6c740a5a17dc1e68db29937270792152dc813bb592d9476189cb9ce516e9d6eba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bLiu5SswLNN1-VYHh8NXOlZQl-S5Siuy%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52087'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fview&id=1'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fview&id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504727572.133
+    'REQUEST_TIME' => 1504727572
+]
+2017-09-07 04:40:35 [127.0.0.1][-][7onheqg09gjqo41ihru8u6vp04][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\controllers\AdminLoginForm' not found' in /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/SiteController.php:77
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-07 04:40:35 [127.0.0.1][-][7onheqg09gjqo41ihru8u6vp04][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '7onheqg09gjqo41ihru8u6vp04'
+    '_csrf-backend' => '9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Š˜÷C­ãù¨«ý_~9ÿ&œK’–ZOß`= Nr2þ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=7onheqg09gjqo41ihru8u6vp04; _csrf-backend=9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8A%98%F7C%0E%AD%E3%F9%A8%AB%FD%12_%7E9%FF%26%9CK%92%96ZO%DF%60%3D%A0Nr%042%FE%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52962'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504730435.095
+    'REQUEST_TIME' => 1504730435
+]
+2017-09-07 04:42:44 [127.0.0.1][-][7onheqg09gjqo41ihru8u6vp04][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must be an instance of yii\web\IdentityInterface, instance of common\models\Adminuser given, called in /Users/michaelweixi/WWWRoot/apitpl/common/models/AdminLoginForm.php on line 67 and defined' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/User.php:238
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/User.php(238): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', '/Users/michaelw...', 238, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/common/models/AdminLoginForm.php(67): yii\web\User->login(Object(common\models\Adminuser), 2592000)
+#2 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/SiteController.php(78): common\models\AdminLoginForm->login()
+#3 [internal function]: backend\controllers\SiteController->actionLogin()
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-09-07 04:42:43 [127.0.0.1][-][7onheqg09gjqo41ihru8u6vp04][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'nhtz2DPo6UYD4cpEK9CQiTcCUTqrDVDi3xPiIxIX0s8Ug4SbPUUKv6tKN1Z0rql2EZ4aqD1XHz2_LkJtYBPgMQ=='
+    'AdminLoginForm' => [
+        'username' => 'weixi'
+        'password' => 'mmmmmmmm'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => '7onheqg09gjqo41ihru8u6vp04'
+    '_csrf-backend' => '9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Š˜÷C­ãù¨«ý_~9ÿ&œK’–ZOß`= Nr2þ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '259'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-backend=7onheqg09gjqo41ihru8u6vp04; _csrf-backend=9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8A%98%F7C%0E%AD%E3%F9%A8%AB%FD%12_%7E9%FF%26%9CK%92%96ZO%DF%60%3D%A0Nr%042%FE%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '52986'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504730563.307
+    'REQUEST_TIME' => 1504730563
+]
+2017-09-07 04:46:43 [127.0.0.1][-][7onheqg09gjqo41ihru8u6vp04][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must be an instance of yii\web\IdentityInterface, instance of common\models\Adminuser given, called in /Users/michaelweixi/WWWRoot/apitpl/common/models/AdminLoginForm.php on line 67 and defined' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/User.php:238
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/User.php(238): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', '/Users/michaelw...', 238, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/common/models/AdminLoginForm.php(67): yii\web\User->login(Object(common\models\Adminuser), 2592000)
+#2 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/SiteController.php(78): common\models\AdminLoginForm->login()
+#3 [internal function]: backend\controllers\SiteController->actionLogin()
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-09-07 04:46:42 [127.0.0.1][-][7onheqg09gjqo41ihru8u6vp04][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'VHERHXUmH5lV3o6Yk1jP6DcUyRNB0jdnl46nnSolJU7e6eZee4v8YP11c4rMJvYXEYiCgdeIeLj3swfTWCEXsA=='
+    'AdminLoginForm' => [
+        'username' => 'weixi'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => '7onheqg09gjqo41ihru8u6vp04'
+    '_csrf-backend' => '9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Š˜÷C­ãù¨«ý_~9ÿ&œK’–ZOß`= Nr2þ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '257'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-backend=7onheqg09gjqo41ihru8u6vp04; _csrf-backend=9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8A%98%F7C%0E%AD%E3%F9%A8%AB%FD%12_%7E9%FF%26%9CK%92%96ZO%DF%60%3D%A0Nr%042%FE%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '53107'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504730802.759
+    'REQUEST_TIME' => 1504730802
+]
+2017-09-07 04:54:20 [127.0.0.1][-][7onheqg09gjqo41ihru8u6vp04][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must be an instance of yii\web\IdentityInterface, instance of common\models\Adminuser given, called in /Users/michaelweixi/WWWRoot/apitpl/common/models/AdminLoginForm.php on line 67 and defined' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/User.php:238
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/User.php(238): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', '/Users/michaelw...', 238, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/common/models/AdminLoginForm.php(67): yii\web\User->login(Object(common\models\Adminuser), 2592000)
+#2 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/SiteController.php(78): common\models\AdminLoginForm->login()
+#3 [internal function]: backend\controllers\SiteController->actionLogin()
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-09-07 04:54:19 [127.0.0.1][-][7onheqg09gjqo41ihru8u6vp04][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'VHERHXUmH5lV3o6Yk1jP6DcUyRNB0jdnl46nnSolJU7e6eZee4v8YP11c4rMJvYXEYiCgdeIeLj3swfTWCEXsA=='
+    'AdminLoginForm' => [
+        'username' => 'weixi'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => '7onheqg09gjqo41ihru8u6vp04'
+    '_csrf-backend' => '9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Š˜÷C­ãù¨«ý_~9ÿ&œK’–ZOß`= Nr2þ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '257'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'advanced-backend=7onheqg09gjqo41ihru8u6vp04; _csrf-backend=9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8A%98%F7C%0E%AD%E3%F9%A8%AB%FD%12_%7E9%FF%26%9CK%92%96ZO%DF%60%3D%A0Nr%042%FE%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '53157'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504731259.32
+    'REQUEST_TIME' => 1504731259
+]
+2017-09-07 04:56:43 [127.0.0.1][-][ioe0fj2heal27uj0bg1h84e7o0][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Argument 1 passed to yii\web\User::login() must be an instance of yii\web\IdentityInterface, instance of common\models\Adminuser given, called in /Users/michaelweixi/WWWRoot/apitpl/common/models/AdminLoginForm.php on line 67 and defined' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/User.php:238
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/User.php(238): yii\base\ErrorHandler->handleError(4096, 'Argument 1 pass...', '/Users/michaelw...', 238, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/common/models/AdminLoginForm.php(67): yii\web\User->login(Object(common\models\Adminuser), 2592000)
+#2 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/SiteController.php(78): common\models\AdminLoginForm->login()
+#3 [internal function]: backend\controllers\SiteController->actionLogin()
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('login', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/login', Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+2017-09-07 04:56:43 [127.0.0.1][-][ioe0fj2heal27uj0bg1h84e7o0][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => '3S0zaqMKgUIPFm6lwAu0ky-pXJTq66sjArYfeAtwXVzG1n9eh9KU-dbsb1nUEFOQzOFU4afkF0XiNWHhS0PJOw=='
+    'AdminLoginForm' => [
+        'username' => 'weixi'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'ioe0fj2heal27uj0bg1h84e7o0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '257'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://admin.apitpl.dev'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=ioe0fj2heal27uj0bg1h84e7o0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '53267'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504731403.1
+    'REQUEST_TIME' => 1504731403
+]
+2017-09-07 05:47:46 [127.0.0.1][1][c5ei6d9sdulkuh1eejvsb7k6e2][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: app' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/_form.php:27
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/_form.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Users/michaelw...', 27, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/create.php(17): yii\base\View->render('_form', Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\ArticleController))
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\ArticleController))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/ArticleController.php(73): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\ArticleController->actionCreate()
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('article/create', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-09-07 05:47:46 [127.0.0.1][1][c5ei6d9sdulkuh1eejvsb7k6e2][info][application] $_GET = [
+    'r' => 'article/create'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 'c5ei6d9sdulkuh1eejvsb7k6e2'
+    '_identity-backend' => '1b6414a6b54614c7d55da3c2c6a6b138b39c8751c42ca07d59a8e75e65f78b2ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"pG7TRyTIXlEbcenpi34TzmMYS2zDsMTF\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=article%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=c5ei6d9sdulkuh1eejvsb7k6e2; _identity-backend=1b6414a6b54614c7d55da3c2c6a6b138b39c8751c42ca07d59a8e75e65f78b2ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22pG7TRyTIXlEbcenpi34TzmMYS2zDsMTF%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '54369'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=article%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504734466.092
+    'REQUEST_TIME' => 1504734466
+]
+2017-09-07 06:13:37 [127.0.0.1][-][s1747ip1qu23eeip53ebvi1kk7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/_form.php:27
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/_form.php(27): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Users/michaelw...', 27, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/create.php(17): yii\base\View->render('_form', Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\ArticleController))
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\ArticleController))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/ArticleController.php(73): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\ArticleController->actionCreate()
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('article/create', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-09-07 06:13:36 [127.0.0.1][-][s1747ip1qu23eeip53ebvi1kk7][info][application] $_GET = [
+    'r' => 'article/create'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => 's1747ip1qu23eeip53ebvi1kk7'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php?r=site%2Findex'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=article%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=s1747ip1qu23eeip53ebvi1kk7'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '55108'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=article%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504736016.86
+    'REQUEST_TIME' => 1504736016
+]
+2017-09-07 06:34:06 [127.0.0.1][-][4upgadi7a9jguo2ea6p4d2khd2][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/_form.php:27
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/_form.php(27): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Users/michaelw...', 27, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/create.php(17): yii\base\View->render('_form', Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\ArticleController))
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\ArticleController))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/ArticleController.php(73): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\ArticleController->actionCreate()
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('article/create', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-09-07 06:34:06 [127.0.0.1][-][4upgadi7a9jguo2ea6p4d2khd2][info][application] $_GET = [
+    'r' => 'article/create'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '4upgadi7a9jguo2ea6p4d2khd2'
+    '_csrf-backend' => '9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Š˜÷C­ãù¨«ý_~9ÿ&œK’–ZOß`= Nr2þ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php?r=article%2Findex'
+    'HTTP_COOKIE' => 'advanced-backend=4upgadi7a9jguo2ea6p4d2khd2; _csrf-backend=9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8A%98%F7C%0E%AD%E3%F9%A8%AB%FD%12_%7E9%FF%26%9CK%92%96ZO%DF%60%3D%A0Nr%042%FE%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '55544'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=article%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504737246.183
+    'REQUEST_TIME' => 1504737246
+]
+2017-09-07 06:39:46 [127.0.0.1][-][4upgadi7a9jguo2ea6p4d2khd2][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getId() on null' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/header.php:233
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-09-07 06:39:46 [127.0.0.1][-][4upgadi7a9jguo2ea6p4d2khd2][info][application] $_GET = [
+    'r' => 'adminuser/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '4upgadi7a9jguo2ea6p4d2khd2'
+    '_csrf-backend' => '9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Š˜÷C­ãù¨«ý_~9ÿ&œK’–ZOß`= Nr2þ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=4upgadi7a9jguo2ea6p4d2khd2; _csrf-backend=9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8A%98%F7C%0E%AD%E3%F9%A8%AB%FD%12_%7E9%FF%26%9CK%92%96ZO%DF%60%3D%A0Nr%042%FE%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '55613'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Findex'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504737586.441
+    'REQUEST_TIME' => 1504737586
+]
+2017-09-07 06:40:05 [127.0.0.1][-][4upgadi7a9jguo2ea6p4d2khd2][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/header.php:233
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/header.php(233): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Users/michaelw...', 233, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/main.php(46): yii\base\View->render('header.php', Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="adm...')
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(46): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\AdminuserController->actionIndex()
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/index', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-09-07 06:40:05 [127.0.0.1][-][4upgadi7a9jguo2ea6p4d2khd2][info][application] $_GET = [
+    'r' => 'adminuser/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '4upgadi7a9jguo2ea6p4d2khd2'
+    '_csrf-backend' => '9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Š˜÷C­ãù¨«ý_~9ÿ&œK’–ZOß`= Nr2þ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 4
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-backend=4upgadi7a9jguo2ea6p4d2khd2; _csrf-backend=9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8A%98%F7C%0E%AD%E3%F9%A8%AB%FD%12_%7E9%FF%26%9CK%92%96ZO%DF%60%3D%A0Nr%042%FE%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '55618'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Findex'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504737605.283
+    'REQUEST_TIME' => 1504737605
+]
+2017-09-07 06:41:37 [127.0.0.1][1][57q1pl9lac7p3hfsiei0s5l2e6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: common\models\User::realname' in /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/db/BaseActiveRecord.php(285): yii\base\Component->__get('realname')
+#1 /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/header.php(233): yii\db\BaseActiveRecord->__get('realname')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#4 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#5 /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/main.php(46): yii\base\View->render('header.php', Array)
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#9 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="adm...')
+#10 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(46): yii\base\Controller->render('index', Array)
+#11 [internal function]: backend\controllers\AdminuserController->actionIndex()
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/index', Array)
+#16 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#18 {main}
+2017-09-07 06:41:37 [127.0.0.1][1][57q1pl9lac7p3hfsiei0s5l2e6][info][application] $_GET = [
+    'r' => 'adminuser/index'
+]
+
+$_COOKIE = [
+    'advanced-backend' => '57q1pl9lac7p3hfsiei0s5l2e6'
+    '_csrf-backend' => '9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"Š˜÷C­ãù¨«ý_~9ÿ&œK’–ZOß`= Nr2þ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:55.0) Gecko/20100101 Firefox/55.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://admin.apitpl.dev/index.php'
+    'HTTP_COOKIE' => 'advanced-backend=57q1pl9lac7p3hfsiei0s5l2e6; _csrf-backend=9994d3e0a5f618de869b6cdf3ac2e3c570e145260c0844a1d519fa54d9aae670a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%8A%98%F7C%0E%AD%E3%F9%A8%AB%FD%12_%7E9%FF%26%9CK%92%96ZO%DF%60%3D%A0Nr%042%FE%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '55669'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Findex'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504737697.461
+    'REQUEST_TIME' => 1504737697
+]
+2017-09-07 06:44:29 [127.0.0.1][-][7pnmr5fhq3djfgclnlgj5r8q31][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/header.php:233
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/header.php(233): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Users/michaelw...', 233, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/main.php(46): yii\base\View->render('header.php', Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="adm...')
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(46): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\AdminuserController->actionIndex()
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/index', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-09-07 06:44:29 [127.0.0.1][-][7pnmr5fhq3djfgclnlgj5r8q31][info][application] $_GET = [
+    'r' => 'adminuser/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => '7pnmr5fhq3djfgclnlgj5r8q31'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3198.0 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=7pnmr5fhq3djfgclnlgj5r8q31'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '55699'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Findex'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504737869.476
+    'REQUEST_TIME' => 1504737869
+]
+2017-09-07 10:18:51 [127.0.0.1][-][7pnmr5fhq3djfgclnlgj5r8q31][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/header.php:233
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/header.php(233): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Users/michaelw...', 233, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/layouts/main.php(46): yii\base\View->render('header.php', Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\AdminuserController))
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="adm...')
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/AdminuserController.php(46): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\AdminuserController->actionIndex()
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('adminuser/index', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-09-07 10:18:50 [127.0.0.1][-][7pnmr5fhq3djfgclnlgj5r8q31][info][application] $_GET = [
+    'r' => 'adminuser/index'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => '7pnmr5fhq3djfgclnlgj5r8q31'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.9 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=7pnmr5fhq3djfgclnlgj5r8q31'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '49154'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Findex'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Findex'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504750730.65
+    'REQUEST_TIME' => 1504750730
+]
+2017-09-07 10:18:57 [127.0.0.1][-][7pnmr5fhq3djfgclnlgj5r8q31][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/_form.php:27
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/_form.php(27): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Users/michaelw...', 27, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/create.php(17): yii\base\View->render('_form', Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\ArticleController))
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\ArticleController))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/ArticleController.php(73): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\ArticleController->actionCreate()
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('article/create', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-09-07 10:18:57 [127.0.0.1][-][7pnmr5fhq3djfgclnlgj5r8q31][info][application] $_GET = [
+    'r' => 'article/create'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => '7pnmr5fhq3djfgclnlgj5r8q31'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.9 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=7pnmr5fhq3djfgclnlgj5r8q31'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '49182'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=article%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504750737.06
+    'REQUEST_TIME' => 1504750737
+]
+2017-09-07 10:18:59 [127.0.0.1][-][7pnmr5fhq3djfgclnlgj5r8q31][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/_form.php:27
+Stack trace:
+#0 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/_form.php(27): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/Users/michaelw...', 27, Array)
+#1 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#2 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#3 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, NULL)
+#4 /Users/michaelweixi/WWWRoot/apitpl/backend/views/article/create.php(17): yii\base\View->render('_form', Array)
+#5 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(330): require('/Users/michaelw...')
+#6 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/michaelw...', Array)
+#7 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Users/michaelw...', Array, Object(backend\controllers\ArticleController))
+#8 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('create', Array, Object(backend\controllers\ArticleController))
+#9 /Users/michaelweixi/WWWRoot/apitpl/backend/controllers/ArticleController.php(73): yii\base\Controller->render('create', Array)
+#10 [internal function]: backend\controllers\ArticleController->actionCreate()
+#11 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('create', Array)
+#14 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('article/create', Array)
+#15 /Users/michaelweixi/WWWRoot/apitpl/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-09-07 10:18:59 [127.0.0.1][-][7pnmr5fhq3djfgclnlgj5r8q31][info][application] $_GET = [
+    'r' => 'article/create'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ûL4$Ø»ÙúüçãHuM¼fàƒ~™@3”g\";}'
+    'advanced-backend' => '7pnmr5fhq3djfgclnlgj5r8q31'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/index.php'
+    '__id' => 3
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'admin.apitpl.dev'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.9 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4'
+    'HTTP_COOKIE' => '_csrf-backend=7d96f6eca4be003c46f121bbee465cf6c1247eb59b405cd2be70043859a7ccf1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22%1B%FBL4%24%D8%15%BB%D9%FA%01%FC%14%1B%E7%03%E3H%08uM%0F%BCf%E0%83%7E%99%403%94g%22%3B%7D; advanced-backend=7pnmr5fhq3djfgclnlgj5r8q31'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.25 (Unix) PHP/5.6.30'
+    'SERVER_NAME' => 'admin.apitpl.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/michaelweixi/WWWRoot/apitpl/backend/web/index.php'
+    'REMOTE_PORT' => '49197'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=article%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=article%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504750739.055
+    'REQUEST_TIME' => 1504750739
+]
